@@ -1,0 +1,36 @@
+table_id: magnitude_errormail_v1
+dataset: ${app_name_short}_ds_c3_000_dsmonitoring_${multiregion}_${project_env}
+range_partitioning: null
+time_partitioning: null
+clustering: null
+description: Table to have error data for mail
+gdpr: false
+privacy: true
+confidentiality: c3
+data_domain: btdpmonitoring
+data_family: "000"
+data_gbo: null
+version: 1
+previous_version: 0
+schema:
+- mode: NULLABLE
+  name: flow_id
+  type: STRING
+- mode: NULLABLE
+  name: execution_id
+  type: STRING
+- mode: NULLABLE
+  name: env
+  type: STRING
+- mode: NULLABLE
+  name: last_step
+  type: STRING
+- mode: NULLABLE
+  name: final_state
+  type: STRING
+- mode: NULLABLE
+  name: end_time
+  type: TIMESTAMP
+- mode: NULLABLE
+  name: status
+  type: STRING
